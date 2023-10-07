@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.svg" alt="app logo">
+        </div>
+    
+        <div class="score">
+            <span>Score</span>
+            <span id="score__value">0</span>
+        </div>
+    </header>
+
+    <main>
+        <div id="game-container">
+            <!-- WHEN GAME IS NOT PLAYING -->
+            <div class="rps-landing">
+                <button class="play-btn" id="rock"></button>
+                <button class="play-btn" id="paper"></button>
+                <button class="play-btn" id="scissors"></button>
+                <img src="./images/bg-triangle.svg" alt="">
+            </div>
+
+            <!-- WHEN GAME IS PLAYING -->
+            <div class="rps-playing">
+                <div class="player">
+                    <p>You picked</p>
+                </div>
+                
+                <div class="computer">
+                    <p>The House picked</p>
+                </div>
+
+                <div class="declaration">
+                    <p></p>
+                    <button id="play-again">Play Again</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rules">
+            <div class="rules__modal">
+                <h2>Rules</h2>
+
+                <img src="./images/image-rules.svg" alt="game rules">
+
+                <button>
+                    <img src="./images/icon-close.svg" alt="close modal">
+                </button>
+            </div>
+            <button>Rules</button>
+        </div>
+    </main>
+
+    <script src="./app/main.js"></script>
+</body>
+</html>
